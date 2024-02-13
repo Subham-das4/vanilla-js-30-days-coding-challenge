@@ -1,0 +1,38 @@
+body{
+    height: 90vh;
+    width: 90vw;
+    background-image: url('./background.jpg');
+}
+main {
+    display: flex;
+    height: inherit;
+}
+.key_container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.key_container span{
+    display: inline-block;
+    border: 3px solid black;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.press_effect{
+    animation: press_effect 0.4s ease;
+}
+
+@keyframes press_effect {
+    0%{
+        background-color: white;
+    }
+}
